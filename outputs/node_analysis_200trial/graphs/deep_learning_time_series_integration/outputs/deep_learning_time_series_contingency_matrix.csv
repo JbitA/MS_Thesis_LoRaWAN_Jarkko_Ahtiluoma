@@ -1,0 +1,13 @@
+quantity,value
+N observed days,1088
+"Tail window k (days): max(10, ⌊0.15·N⌋)",163
+τ battery (V): q=0.10 of true battery (regression reference line),3.537968
+τ halt probability: q=0.85 of predicted prob on this series (classification band),0.584934
+Tail battery drop (V): median(early-k true) − median(late-k true),0.446931
+Tail risk rise: median(late-k pred prob) − median(early-k pred prob),0.232784
+Tail peak risk: max predicted prob in tail window,0.960591
+"(R,H) contingency — observed days only (see matrix below)",
+"R=0, H=0",0
+"R=0, H=1",103
+"R=1, H=0",924
+"R=1, H=1",61
