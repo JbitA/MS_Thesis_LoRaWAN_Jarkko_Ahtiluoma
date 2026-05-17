@@ -1,0 +1,5 @@
+column	dtype	unit	description
+time	int64	ms UTC	LoRaWAN uplink timestamp (milliseconds since Unix epoch)
+deveui	string		Device id string (real: LoRaWAN EUI; this repo example: SYNTH_NODE_001)
+battery	float64	V	Reported battery voltage
+co2	float64	ppm	CO2 concentration; non-null values mark ERS devices for cohort discovery

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+idata/dummy_smoke/
+pipeline/cohorts/dummy_smoke_deveui.csv
+pipeline/assets/future_horizon_parallel_comparison_series.csv
