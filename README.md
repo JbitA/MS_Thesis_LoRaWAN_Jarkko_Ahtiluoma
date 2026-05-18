@@ -20,8 +20,6 @@ This public tree is a **thesis source-code example**. Device labels, bundled CSV
 | `outputs/node_analysis_200trial/` | **Example run artifacts** (tables + graphs) produced from that synthetic/example pipeline state. Metrics illustrate the workflow; they are **not** confidential campus results. |
 | `aa-11-22-33-…` (dummy smoke only) | Clearly fake IDs used by `python main.py --dummy-smoke` for a minimal local test. |
 
-There is **no lookup table** from `SYNTH_NODE_*` to real DevEUIs in this repo. If your thesis chapter reports numbers from **restricted campus data**, say so in the thesis text; do not imply this GitHub folder is that dataset.
-
 ---
 
 ## Using your own real dataset
@@ -49,7 +47,7 @@ python main.py --epochs 12 --run-id my_campus_2026 `
   --cohort-csv pipeline\cohorts\my_campus_run.csv --skip-survival
 ```
 
-5. **Inspect results** under `outputs/my_campus_2026/models/tables/` (CSVs for figures) and `outputs/my_campus_2026/graphs/<figure_key>/outputs/` (PNG + companion metrics). Keep raw `idata` and cohort files off GitHub if your institution requires it.
+5. **Inspect results** under `outputs/my_campus_2026/models/tables/` (CSVs for figures) and `outputs/my_campus_2026/graphs/<figure_key>/outputs/` (PNG + companion metrics).
 
 To rebuild figures without retraining:
 
@@ -93,7 +91,7 @@ python main.py --dummy-smoke --epochs 2
 
 Uses `pipeline/cohorts/dummy_smoke_deveui.csv` (eight devices `aa-11-22-33-…`) and seeds `idata/dummy_smoke/`. Outputs go to `outputs/node_analysis_dummy/`.
 
-The committed example under `outputs/node_analysis_200trial/` was produced with a larger synthetic cohort (no longer in the repo). Rebuild figures only:
+The committed example under `outputs/node_analysis_200trial/` was produced with a larger synthetic cohort. Rebuild figures only:
 
 ```powershell
 python main.py --graphs-only --run-id node_analysis_200trial
